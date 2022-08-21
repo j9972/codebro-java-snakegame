@@ -26,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -34,16 +35,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1661091587" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="checkoutbranch" />
                     <option name="lastUsedInstant" value="1661091276" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="newBranch" />
                     <option name="lastUsedInstant" value="1661091155" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1661091136" />
                   </RecentBranch>
                 </list>
               </option>
@@ -102,7 +103,7 @@
       <updated>1660979470808</updated>
       <workItem from="1660979472128" duration="6704000" />
       <workItem from="1661067621749" duration="1861000" />
-      <workItem from="1661083127147" duration="6238000" />
+      <workItem from="1661083127147" duration="6752000" />
     </task>
     <task id="LOCAL-00001" summary="add TODO LIST">
       <created>1661090577029</created>

@@ -75,9 +75,9 @@ public class GamePanel extends JPanel implements ActionListener {
                     g.setColor(Color.green);
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else {
-                    // g.setColor((new Color(45, 180, 0)));
+                    g.setColor((new Color(45, 180, 0))); // 뱀 몸통색을 초록색으로 고정
                     // snake 의 몸통 색을 여러가지 색으로 표현하는 방법
-                    g.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+                    // g.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 }
             }

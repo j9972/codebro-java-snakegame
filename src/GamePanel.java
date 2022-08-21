@@ -3,7 +3,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.util.Random;
 
-// TODO : 게임이 끝난후 재시작할 버튼이랑, 점수 등록하기
+// TODO : 게임이 끝난후 재시작할 버튼이랑, 점수 등록하기 -> 버튼 만드는 방법이랑 버튼에 action 주는 방법 찾아보기
 // TODO : 처음에 지금 point 가 나타나지 않는데 이거 해결하기
 
 public class GamePanel extends JPanel implements ActionListener {

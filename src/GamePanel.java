@@ -1,12 +1,11 @@
-import java.awt.event.*;
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 
-// TODO : todolist 먼저 체크 하고 고치기
 // TODO : 게임이 끝난후 재시작할 버튼이랑, 점수 등록하기 -> 버튼 만드는 방법이랑 버튼에 action 주는 방법 찾아보기
 // TODO : 처음에 지금 point 가 나타나지 않는데 이거 해결하기
-// TODO : point들이 중간중간에 사라지는데 newPoint 메소드 확인
+// TODO : point 들이 중간중간에 사라지는데 newPoint 메소드 확인
 
 
 public class GamePanel extends JPanel implements ActionListener {
@@ -15,7 +14,7 @@ public class GamePanel extends JPanel implements ActionListener {
     static final int SCREEN_WIDTH = 1300;
     static final int SCREEN_HEIGHT = 750;
     static final int UNIT_SIZE = 50; // 스크린에 보일 격자칸의 크기
-    static final int GAME_UNITES = (SCREEN_WIDTH * SCREEN_HEIGHT) / UNIT_SIZE;
+    static final int GAME_UNITES = (SCREEN_WIDTH * SCREEN_HEIGHT) / (UNIT_SIZE * UNIT_SIZE);
     static final int DELAY = 100; // 지연 시간
 
     // array 만듬 -> snake 의 헤드를 포함한 위치를 나타내기위함
@@ -99,8 +98,8 @@ public class GamePanel extends JPanel implements ActionListener {
 
     // 새롭게 점수 포인트 만들기
     public void newPoint() {
-        pointX = random.nextInt(SCREEN_WIDTH/UNIT_SIZE)*UNIT_SIZE;
-        pointY = random.nextInt(SCREEN_WIDTH/UNIT_SIZE)*UNIT_SIZE;
+        pointX = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
+        pointY = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
     }
 
     // 뱀이 움직이게 하는 메소드

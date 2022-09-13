@@ -1,14 +1,13 @@
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 
 // TODO : 게임이 끝난후 재시작할 버튼이랑, 점수 등록하기 -> 버튼 만드는 방법이랑 버튼에 action 주는 방법 찾아보기
-// TODO : 처음에 지금 point 가 나타나지 않는데 이거 해결하기
-// TODO : point 들이 중간중간에 사라지는데 newPoint 메소드 확인
 
 
-public class GamePanel extends JPanel implements ActionListener {
+public class GamePanel extends JPanel implements ActionListener{
 
     // 클래스(전역) 상수
     static final int SCREEN_WIDTH = 1300;
@@ -20,7 +19,7 @@ public class GamePanel extends JPanel implements ActionListener {
     // array 만듬 -> snake 의 헤드를 포함한 위치를 나타내기위함
     final int x[] = new int[GAME_UNITES]; // x 좌표
     final int y[] = new int[GAME_UNITES]; // y 좌표
-    int bodyParts = 6; // 기본크기
+    int bodyParts = 4; // 기본크기
     int pointEaten; // 처음의 점수는 당연히 0이다
     int pointX; // 점수가 있을 장소의 x 좌표
     int pointY; // 점수가 있을 장소의 y 좌표
@@ -60,12 +59,15 @@ public class GamePanel extends JPanel implements ActionListener {
     // 기본
     public void draw(Graphics g) {
         if(running) {        // screen 에 격자형을 만들어서 개발시 시각적으로 확인하기 위함
+
+
             /* 개발후에는 격자형이 있을 이유가 없다.
             for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
                 g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
                 g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
             }
             */
+
             g.setColor(Color.RED);
             g.fillOval(pointX, pointY, UNIT_SIZE, UNIT_SIZE);
 
@@ -76,14 +78,14 @@ public class GamePanel extends JPanel implements ActionListener {
                     g.setColor(Color.green);
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else {
-                    g.setColor((new Color(45, 180, 0))); // 뱀 몸통색을 초록색으로 고정
+                    g.setColor(new Color(45, 180, 0)); // 뱀 몸통색을 초록색으로 고정
                     // snake 의 몸통 색을 여러가지 색으로 표현하는 방법
                     // g.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 }
             }
             // Game Over text
-            g.setColor(Color.RED);
+            g.setColor(Color.red);
             g.setFont(new Font("Ink Free", Font.BOLD, 40));
 
             // font 를 적용하는데 있어서 사용한다
@@ -97,9 +99,9 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     // 새롭게 점수 포인트 만들기
-    public void newPoint() {
+    public void newPoint(){
         pointX = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
-        pointY = random.nextInt((int)(SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
+        pointY = random.nextInt((int)(SCREEN_HEIGHT/UNIT_SIZE))*UNIT_SIZE;
     }
 
     // 뱀이 움직이게 하는 메소드
@@ -226,3 +228,6 @@ public class GamePanel extends JPanel implements ActionListener {
         }
     }
 }
+
+
+

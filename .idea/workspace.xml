@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a6bef06-32b4-4ed5-93e2-04b35792b85f" name="변경" comment="add TODO LIST">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,19 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Snake" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Snake" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
@@ -130,7 +119,9 @@
       <workItem from="1661083127147" duration="6752000" />
       <workItem from="1661147092519" duration="121000" />
       <workItem from="1662464401660" duration="741000" />
-      <workItem from="1662548434778" duration="2755000" />
+      <workItem from="1662548434778" duration="2824000" />
+      <workItem from="1662597713867" duration="1747000" />
+      <workItem from="1663066915323" duration="1595000" />
     </task>
     <task id="LOCAL-00001" summary="add TODO LIST">
       <created>1661090577029</created>
